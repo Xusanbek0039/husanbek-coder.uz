@@ -83,7 +83,7 @@ body{
   width: 6px;
   text-indent: 0;
   background: var(--col-icon);
-  animation: blink 0.3s infinite alternate;
+  animation: blink 1.5s infinite alternate;
 }
 .datawords{
   white-space: nowrap;

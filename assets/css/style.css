@@ -395,7 +395,7 @@ color: #ffffff !important;
       margin-right: auto;
       bottom: 0;
       width: 32%;
-      border-bottom: 3px solid #6a00bb;
+      border-bottom: 3px solid #00c621;
   }
   
   .nav-item-hover::after {
@@ -433,7 +433,7 @@ html[light-mode="light"] .nav-link{
   color: #000000 !important;
 }
 html[light-mode="light"] .nav-link:hover{
-  color: 	rgb(106, 0, 187) !important;
+  color: 	rgb(0, 187, 34) !important;
 }
 html[light-mode="light"] .navbar-brand:hover{
   color: #000000 !important;
@@ -800,7 +800,7 @@ Contact Form In Footer
   font-size: 25px;
   font-weight: 200;
   line-height: 22px;
-  border-bottom: 3px solid #bb86fc;
+  border-bottom: 3px solid #00c621;
 }
 
 .form-header {
@@ -829,7 +829,7 @@ form {
 }
 
 .form-style-6 h1 {
-  background: #bb86fc;
+  background: #00c621;
   font-size: 140%;
   font-weight: 300;
   text-align: center;
@@ -859,7 +859,7 @@ form {
   background: transparent;
   margin-bottom: 4%;
   border: #000;
-  border-bottom: 2px solid #bb86fc;
+  border-bottom: 2px solid #00c621;
   padding: 3%;
   color: rgb(107, 105, 105);
   font: 95% Arial, Helvetica, sans-serif;
@@ -876,9 +876,9 @@ form {
 .form-style-6 input[type="url"]:focus,
 .form-style-6 textarea:focus,
 .form-style-6 select:focus {
-  box-shadow: 0 0 5px #bb86fc;
+  box-shadow: 0 0 5px #00c621;
   padding: 3%;
-  border: 1px solid #bb86fc;
+  border: 1px solid #00c621;
   border-radius: 2px;
 }
 

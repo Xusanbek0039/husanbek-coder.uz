@@ -8,11 +8,10 @@ var cursor = {
   cursorEnlarged: false,
   $dot: document.querySelector(".cursor-dot"),
   $outline: document.querySelector(".cursor-dot-outline"),
-  lastScrolledLeft : 0, // For changing position of cursor with scrolling
-  lastScrolledTop : 0,  // For changing position of cursor with scrolling
+  lastScrolledLeft : 0, 
+  lastScrolledTop : 0, 
 
   init: function () {
-    // Set up element sizes
     this.dotSize = this.$dot.offsetWidth;
     this.outlineSize = this.$outline.offsetWidth;
 
@@ -23,7 +22,7 @@ var cursor = {
   setupEventListeners: function () {
     var self = this;
 
-    // Anchor hovering
+    // Anker suzmoqda
     document.querySelectorAll("a").forEach(function (el) {
       el.addEventListener("mouseover", function () {
         self.cursorEnlarged = true;
@@ -35,7 +34,7 @@ var cursor = {
       });
     });
 
-    // Click events
+    // Hodisalarni bosing
     document.addEventListener("mousedown", function () {
       self.cursorEnlarged = true;
       self.toggleCursorSize();
@@ -46,18 +45,18 @@ var cursor = {
     });
 
     document.addEventListener("mousemove", function (e) {
-      // Show the cursor
+      // Kursorni ko'rsatish
       self.cursorVisible = true;
       self.toggleCursorVisibility();
 
-      // Position the dot
+      // Nuqtani joylashtiring
       self.endX = e.pageX;
       self.endY = e.pageY;
       self.$dot.style.top = self.endY + "px";
       self.$dot.style.left = self.endX + "px";
     });
 
-    // Hide/show cursor
+    // Kursorni yashirish/ko‘rsatish
     document.addEventListener("mouseenter", function (e) {
       self.cursorVisible = true;
       self.toggleCursorVisibility();
@@ -72,7 +71,7 @@ var cursor = {
       self.$outline.style.opacity = 0;
     });
 
-    // Change position of cursor with scrolling
+    //O'tkazish bilan kursor o'rnini o'zgartiring
     document.addEventListener('scroll', function (e) {
 
       if (self.lastScrolledLeft != $(document).scrollLeft()) {
@@ -128,3 +127,7 @@ var cursor = {
 };
 
 cursor.init();
+
+
+
+// kurson uchun

@@ -1,7 +1,7 @@
 window.onload = function () {
   const favicon = document.getElementById('favicon')
   const pageTitle = document.title
-  const attentionMessage = 'Iltimos qayting!'
+  const attentionMessage = 'Saxifani yopmang!!!'
 
   document.addEventListener('visibilitychange', function (e) {
     const isPageActive = !document.hidden
@@ -18,3 +18,6 @@ window.onload = function () {
     }
   }
 }
+
+
+// Saxifa yopilganda qaytadan chaqirish uchun

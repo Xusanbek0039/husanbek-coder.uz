@@ -1,6 +1,5 @@
-
+// header hamda footer xabar yuborish uchun js 
 "use strict";
-// Sweet Alert CDN through JS
 let script = document.createElement("script");
 script.type = 'text/javascript';
 script.src="https://unpkg.com/sweetalert/dist/sweetalert.min.js";
@@ -259,7 +258,7 @@ let footer = $(`
 </footer>
 `);
 
-//"Scroll to top" button
+//"Yuqoriga o'tish" tugmasi
 let upArrow = $(`
   <button id="btnScrollToTop" onclick="scrollToTop()"><i class="fas fa-2x fa-angle-up"></i></button>
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
@@ -267,22 +266,18 @@ let upArrow = $(`
 `);
 
 $(document).ready(function () {
-  // updating the color of the swiper bullets (initial update of color)
+  // supurgi o'qlarining rangini yangilash (rangning dastlabki yangilanishi)
   updateColorOfSwiperBullets(localStorage.getItem("lightMode"));
 
-  //function for the "Scroll To Top" button to detect the footer
   $(window).scroll(function () {
-    //The button will be hidden until we scroll more than the window's height
     if ($(window).scrollTop() < $(window).height()) {
       $("#btnScrollToTop").css("visibility", "hidden");
     } else {
       $("#btnScrollToTop").css("visibility", "visible");
-      //The button will change it's color when it hits the footer
       if (
         $(window).scrollTop() + $(window).height() >
         $(document).height() - 838
       ) {
-        // 838 should be changed if footer's height is changed so that the button changes it's color exactly when it hits the footer (preferably 14 less than the computer height of the footer)
         $("#btnScrollToTop").css("background-color", "#6a00bb");
       } else {
         $("#btnScrollToTop").css("background-color", "#6a00bb");
@@ -291,7 +286,6 @@ $(document).ready(function () {
   });
 });
 
-//function to scroll to top
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
@@ -300,7 +294,6 @@ const scrollToTop = () => {
   });
 };
 
-// Window Loads
 $(function () {
   let bodyElement = $(`body`);
   bodyElement.prepend(header);
@@ -308,7 +301,6 @@ $(function () {
   bodyElement.append(upArrow);
   $("#btnScrollToTop").css("visibility", "hidden");
 
-  //toggler hamburger functions
   const menuBtn = document.querySelector(".navbar-toggler");
   let menuOpen = false;
   menuBtn.addEventListener("click", () => {
@@ -322,15 +314,12 @@ $(function () {
   });
 });
 
-// function for toggling hamburger is-active class
 
 $(function () {
   $("#js-hamburger").on("click", function () {
     $(this).toggleClass("is-active");
   });
 });
-
-// Navbar current page highlight
 
 let loader = document.querySelector(".loader-container");
 
@@ -347,8 +336,6 @@ $(function () {
   });
 });
 
-//function to remove underline on hover
-
 $(document).ready(function () {
   $("a.nav-link").hover(
     function () {
@@ -362,12 +349,10 @@ $(document).ready(function () {
   );
 });
 
-//consistent light mode for page change
 if (localStorage.getItem("lightMode") == "light") {
   var app = document.getElementsByTagName("HTML")[0];
   app.setAttribute("light-mode", "light");
 
-  //to add dark theme to nav bar after its been loaded
   window.addEventListener("load", function () {
     var nav = document.getElementById("navbar");
     nav.classList.remove("dark-theme");
@@ -404,11 +389,9 @@ function toggle_light_mode() {
     }
   }
 
-  // updating the swiper bullets
   updateColorOfSwiperBullets(localStorage.getItem("lightMode"));
 }
 
-// function to update swiper bullets
 function updateColorOfSwiperBullets(lightMode) {
   document.querySelectorAll(".swiper-pagination-bullet").forEach((bullet) => {
     if (lightMode == "light") {
@@ -427,7 +410,6 @@ window.addEventListener("storage", function () {
   }
 });
 
-// Function to remove scroll bar during preload
 $(window).on("load", function () {
   setTimeout(function () {
     $(".no-scroll-preload").css("overflow", "visible");
@@ -435,7 +417,6 @@ $(window).on("load", function () {
   $(".loader-container").fadeOut(2500);
 });
 
-//send button animation
 
 
 $(function submitAnimation() {
@@ -446,32 +427,28 @@ $(function submitAnimation() {
 
   $("#lnch").on("click", function () {
 
-    // Check if the name field is empty or contains a number
     if (name.value == "" || (/\d/.test(name.value))) {
-      swal("Error !","Please enter a valid name !","error");
+      swal("Xatolik !","Yaroqli nom kiriting!","error");
       return;
     }
-    // Check if the email field is empty or email is not valid ex: test@@email.com
     else if (emailAdress.value == "" || !(emailPattern.test(emailAdress.value))) {
-      swal("Error !","Please enter a valid email !","error");
+      swal("Xatolik !","Mavjud elektron pochta kiriting !","error");
       return;
     }
-    // Check if the message field is empty
     else if (text.value == "") {
-      swal("Error !","Please enter a valid message !","error");
+      swal("Xatolik !","Xabarni to'liq yozishingiz shart !","error");
       return;
     }
     else {
 
       setTimeout(function () {
-        $("#lnch").addClass("launching").text("Sending");
+        $("#lnch").addClass("launching").text("Yuborilmoqda...");
         $("#lnch_btn").addClass("launching");
       }, 0);
       setTimeout(function () {
-        $("#lnch").addClass("launched").text("SENT");
+        $("#lnch").addClass("launched").text("Yuborildi");
         $("#lnch_btn").addClass("launched");
       }, 1500);
-      // Wait for 2.2 seconds so that the send button animation can be fully played before submitting the form
       setTimeout(() => {
         document.querySelector('form').submit();
       }, 2200);

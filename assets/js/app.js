@@ -262,7 +262,7 @@ let footer = $(`
 //"Yuqoriga o'tish" tugmasi
 let upArrow = $(`
   <button id="btnScrollToTop" onclick="scrollToTop()"><i class="fas fa-2x fa-angle-up"></i></button>
-  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link rel="stylesheet" type="text/css" style="background-color: rgba(27, 185, 6, 0.806);" href="./css/style.css" />
   })
 `);
 

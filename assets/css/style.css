@@ -73,7 +73,7 @@ html[data-theme="dark"] {
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px #bb86fc;
+  -webkit-box-shadow: inset 0 0 6px #06d509c2;
   border-radius: 2px;
   background: #f1f1f1;
 }
@@ -94,7 +94,7 @@ html[data-theme="dark"] {
 /* Custom Scrollbar for Mozilla Firefox*/
 html{
   overflow-y: visible;
-  scrollbar-color: #13d101 #000000c4;
+  scrollbar-color: #06d509c2;
   scrollbar-width: auto;
 }
 
@@ -516,7 +516,7 @@ html[light-mode="light"] .navbar-brand:hover{
 .footer {
   padding-top: 10px;
   font-family: "Poppins", sans-serif;
-  background-color: #121212;
+  background-color: #27e700e5;
 }
 
 .tag {

@@ -1,15 +1,10 @@
-/* ==================== 
-  Main CSS Styles for Husanbek Portfolio
-  Organized by sections:
-  - Base styles & variables
-  - Layout & utility classes
-  - Components
-  - Page-specific styles
-  - Animations
-  - Media queries
-==================== */
+.framework-logo {
+  width: 40px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
-/* ===== Base styles & variables ===== */
 :root {
   /* Color Variables */
   --asosiy-rang: #3366FF;
@@ -173,6 +168,7 @@ button {
 .asosiy-kontent {
   min-height: 100vh;
   padding-top: 80px; /* Navbar height */
+
 }
 
 .sahifa-asosiy {
@@ -346,7 +342,7 @@ button {
   font-size: 0.875rem;
 }
 
-.tugma-to'liq {
+.tugma-toliq {
   display: block;
   width: 100%;
 }
@@ -1330,7 +1326,7 @@ button {
   font-size: 1.1rem;
 }
 
-.aloqa-ma'lumotlar {
+.aloqa-malumotlar {
   margin-bottom: var(--spacing-lg);
 }
 

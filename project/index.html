@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Husanbek — Full Stack Developer</title>
+  <link rel="stylesheet" href="assets/css/uslub.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Preconnect to improve performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-light">
+  <!-- Loading Screen -->
+  <div class="loading-sahifa">
+    <div class="terminal">
+      <div class="kod-satr">npm install husanbek-portfolio</div>
+      <div class="kod-satr">npm run start</div>
+      <div class="kod-satr">Initializing portfolio...</div>
+    </div>
+  </div>
+
+  <!-- Header will be loaded with JavaScript -->
+  <header id="boshnav-container"></header>
+
+  <main class="asosiy-kontent">
+    <!-- Hero Section -->
+    <section class="bosh-qism">
+      <div class="bosh-qism-fon">
+        <div id="three-container"></div>
+      </div>
+      
+      <div class="bosh-qism-matn">
+        <h1>
+          <span data-lang="uz">Salom, men <span class="rangdor-matn">Husanbek</span></span>
+          <span data-lang="ru">Привет, я <span class="rangdor-matn">Хусан</span></span>
+        </h1>
+        <h2>
+          <span data-lang="uz">Full Stack Developer</span>
+          <span data-lang="ru">Full Stack Разработчик</span>
+        </h2>
+        <p class="tavsif">
+          <span data-lang="uz">Web va mobil ilovalarni yarataman. Frontend va backend texnologiyalarini mukammal darajada biladigan mutaxassisman.</span>
+          <span data-lang="ru">Я создаю веб и мобильные приложения. Специалист, отлично владеющий как frontend, так и backend технологиями.</span>
+        </p>
+        
+        <div class="bosh-tugmalar">
+          <a href="contact.html" class="tugma tugma-asosiy">
+            <span data-lang="uz">Menga yozing</span>
+            <span data-lang="ru">Написать мне</span>
+          </a>
+          <a href="portfolio.html" class="tugma tugma-ikkilamchi">
+            <span data-lang="uz">Loyihalarni ko'ring</span>
+            <span data-lang="ru">Посмотреть проекты</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Preview Section -->
+    <section class="konikma-qism">
+      <h2 class="bolim-sarlavha">
+        <span data-lang="uz">Texnologiyalar</span>
+        <span data-lang="ru">Технологии</span>
+      </h2>
+      
+      <div class="konikma-konteyner">
+        <div class="konikma-karta" data-aos="fade-up" data-aos-delay="100">
+          <div class="konikma-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3>HTML5</h3>
+          <div class="konikma-darajasi">
+            <div class="progress-bar">
+              <div class="progress" style="width: 95%;"></div>
+            </div>
+            <span>95%</span>
+          </div>
+        </div>
+        
+        <div class="konikma-karta" data-aos="fade-up" data-aos-delay="200">
+          <div class="konikma-icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h3>CSS3</h3>
+          <div class="konikma-darajasi">
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%;"></div>
+            </div>
+            <span>90%</span>
+          </div>
+        </div>
+        
+        <div class="konikma-karta" data-aos="fade-up" data-aos-delay="300">
+          <div class="konikma-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <div class="konikma-darajasi">
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%;"></div>
+            </div>
+            <span>85%</span>
+          </div>
+        </div>
+        
+        <div class="konikma-karta" data-aos="fade-up" data-aos-delay="400">
+          <div class="konikma-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <h3>Python</h3>
+          <div class="konikma-darajasi">
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%;"></div>
+            </div>
+            <span>80%</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="markaziy-tugma">
+        <a href="about.html" class="tugma tugma-ikkilamchi">
+          <span data-lang="uz">Barcha ko'nikmalar</span>
+          <span data-lang="ru">Все навыки</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Recent Projects -->
+    <section class="loyiha-qism">
+      <h2 class="bolim-sarlavha">
+        <span data-lang="uz">So'nggi loyihalar</span>
+        <span data-lang="ru">Недавние проекты</span>
+      </h2>
+      
+      <div class="loyiha-konteyner">
+        <div class="loyiha-karta" data-aos="fade-up">
+          <div class="loyiha-rasm">
+            <img src="https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="E-commerce loyihasi">
+          </div>
+          <div class="loyiha-matn">
+            <h3>
+              <span data-lang="uz">E-commerce Platform</span>
+              <span data-lang="ru">Платформа электронной коммерции</span>
+            </h3>
+            <p>
+              <span data-lang="uz">Django va React orqali yaratilgan to'liq e-commerce platforma</span>
+              <span data-lang="ru">Полная платформа электронной коммерции, созданная с помощью Django и React</span>
+            </p>
+            <div class="loyiha-texnologiyalar">
+              <span class="texnologiya">Django</span>
+              <span class="texnologiya">React</span>
+              <span class="texnologiya">PostgreSQL</span>
+            </div>
+            <div class="loyiha-havolalar">
+              <a href="#" class="tugma tugma-kichik">
+                <span data-lang="uz">Ko'rish</span>
+                <span data-lang="ru">Смотреть</span>
+              </a>
+              <a href="#" class="tugma tugma-kichik tugma-github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="loyiha-karta" data-aos="fade-up" data-aos-delay="100">
+          <div class="loyiha-rasm">
+            <img src="https://images.pexels.com/photos/5083215/pexels-photo-5083215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Task management app">
+          </div>
+          <div class="loyiha-matn">
+            <h3>
+              <span data-lang="uz">Task Management App</span>
+              <span data-lang="ru">Приложение для управления задачами</span>
+            </h3>
+            <p>
+              <span data-lang="uz">Vanilla JavaScript va Firebase orqali yaratilgan vazifa boshqaruv tizimi</span>
+              <span data-lang="ru">Система управления задачами, созданная с помощью Vanilla JavaScript и Firebase</span>
+            </p>
+            <div class="loyiha-texnologiyalar">
+              <span class="texnologiya">JavaScript</span>
+              <span class="texnologiya">HTML5</span>
+              <span class="texnologiya">Firebase</span>
+            </div>
+            <div class="loyiha-havolalar">
+              <a href="#" class="tugma tugma-kichik">
+                <span data-lang="uz">Ko'rish</span>
+                <span data-lang="ru">Смотреть</span>
+              </a>
+              <a href="#" class="tugma tugma-kichik tugma-github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="markaziy-tugma">
+        <a href="portfolio.html" class="tugma tugma-ikkilamchi">
+          <span data-lang="uz">Barcha loyihalar</span>
+          <span data-lang="ru">Все проекты</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer will be loaded with JavaScript -->
+  <footer id="pastki-container"></footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="assets/js/asosiy.js"></script>
+</body>
+</html>

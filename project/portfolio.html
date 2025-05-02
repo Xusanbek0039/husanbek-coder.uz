@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loyihalar — Husanbek</title>
+  <link rel="stylesheet" href="assets/css/uslub.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-light">
+  <!-- Loading Screen -->
+  <div class="loading-sahifa">
+    <div class="terminal">
+      <div class="kod-satr">cd ./portfolio</div>
+      <div class="kod-satr">git pull origin main</div>
+      <div class="kod-satr">Loading projects...</div>
+    </div>
+  </div>
+
+  <!-- Header will be loaded with JavaScript -->
+  <header id="boshnav-container"></header>
+
+  <main class="asosiy-kontent sahifa-asosiy">
+    <div class="sahifa-sarlavha">
+      <h1>
+        <span data-lang="uz">Loyihalarim</span>
+        <span data-lang="ru">Мои проекты</span>
+      </h1>
+    </div>
+    
+    <div class="loyiha-filtrlar">
+      <button class="filter-tugma faol" data-filter="all">
+        <span data-lang="uz">Hammasi</span>
+        <span data-lang="ru">Все</span>
+      </button>
+      <button class="filter-tugma" data-filter="web">
+        <span data-lang="uz">Web</span>
+        <span data-lang="ru">Веб</span>
+      </button>
+      <button class="filter-tugma" data-filter="mobile">
+        <span data-lang="uz">Mobil</span>
+        <span data-lang="ru">Мобильные</span>
+      </button>
+      <button class="filter-tugma" data-filter="other">
+        <span data-lang="uz">Boshqalar</span>
+        <span data-lang="ru">Другие</span>
+      </button>
+    </div>
+    
+    <div class="portfolio-konteyner">
+      <!-- Project 1 -->
+      <div class="loyiha-karta" data-category="web" data-project-id="1" data-aos="fade-up">
+        <div class="loyiha-rasm">
+          <img src="https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="E-commerce loyihasi">
+          <div class="loyiha-overlay">
+            <button class="loyiha-details-tugma">
+              <span data-lang="uz">Batafsil</span>
+              <span data-lang="ru">Подробнее</span>
+            </button>
+          </div>
+        </div>
+        <div class="loyiha-matn">
+          <h3>E-commerce Platform</h3>
+          <p>
+            <span data-lang="uz">Django va React orqali yaratilgan to'liq e-commerce platforma</span>
+            <span data-lang="ru">Полная платформа электронной коммерции, созданная с помощью Django и React</span>
+          </p>
+          <div class="loyiha-texnologiyalar">
+            <span class="texnologiya">Django</span>
+            <span class="texnologiya">React</span>
+            <span class="texnologiya">PostgreSQL</span>
+          </div>
+          <div class="loyiha-havolalar">
+            <a href="#" class="tugma tugma-kichik">
+              <span data-lang="uz">Ko'rish</span>
+              <span data-lang="ru">Смотреть</span>
+            </a>
+            <a href="#" class="tugma tugma-kichik tugma-github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 2 -->
+      <div class="loyiha-karta" data-category="web" data-project-id="2" data-aos="fade-up" data-aos-delay="100">
+        <div class="loyiha-rasm">
+          <img src="https://images.pexels.com/photos/5083215/pexels-photo-5083215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Task management app">
+          <div class="loyiha-overlay">
+            <button class="loyiha-details-tugma">
+              <span data-lang="uz">Batafsil</span>
+              <span data-lang="ru">Подробнее</span>
+            </button>
+          </div>
+        </div>
+        <div class="loyiha-matn">
+          <h3>Task Management App</h3>
+          <p>
+            <span data-lang="uz">Vanilla JavaScript va Firebase orqali yaratilgan vazifa boshqaruv tizimi</span>
+            <span data-lang="ru">Система управления задачами, созданная с помощью Vanilla JavaScript и Firebase</span>
+          </p>
+          <div class="loyiha-texnologiyalar">
+            <span class="texnologiya">JavaScript</span>
+            <span class="texnologiya">HTML5</span>
+            <span class="texnologiya">Firebase</span>
+          </div>
+          <div class="loyiha-havolalar">
+            <a href="#" class="tugma tugma-kichik">
+              <span data-lang="uz">Ko'rish</span>
+              <span data-lang="ru">Смотреть</span>
+            </a>
+            <a href="#" class="tugma tugma-kichik tugma-github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 3 -->
+      <div class="loyiha-karta" data-category="mobile" data-project-id="3" data-aos="fade-up" data-aos-delay="200">
+        <div class="loyiha-rasm">
+          <img src="https://images.pexels.com/photos/4350099/pexels-photo-4350099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Weather Mobile App">
+          <div class="loyiha-overlay">
+            <button class="loyiha-details-tugma">
+              <span data-lang="uz">Batafsil</span>
+              <span data-lang="ru">Подробнее</span>
+            </button>
+          </div>
+        </div>
+        <div class="loyiha-matn">
+          <h3>Weather Mobile App</h3>
+          <p>
+            <span data-lang="uz">React Native bilan yaratilgan ob-havo ma'lumotlarini ko'rsatadigan mobil ilova</span>
+            <span data-lang="ru">Мобильное приложение погоды, созданное с помощью React Native</span>
+          </p>
+          <div class="loyiha-texnologiyalar">
+            <span class="texnologiya">React Native</span>
+            <span class="texnologiya">API</span>
+            <span class="texnologiya">Expo</span>
+          </div>
+          <div class="loyiha-havolalar">
+            <a href="#" class="tugma tugma-kichik">
+              <span data-lang="uz">Ko'rish</span>
+              <span data-lang="ru">Смотреть</span>
+            </a>
+            <a href="#" class="tugma tugma-kichik tugma-github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 4 -->
+      <div class="loyiha-karta" data-category="web" data-project-id="4" data-aos="fade-up" data-aos-delay="300">
+        <div class="loyiha-rasm">
+          <img src="https://images.pexels.com/photos/6177645/pexels-photo-6177645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Personal Blog">
+          <div class="loyiha-overlay">
+            <button class="loyiha-details-tugma">
+              <span data-lang="uz">Batafsil</span>
+              <span data-lang="ru">Подробнее</span>
+            </button>
+          </div>
+        </div>
+        <div class="loyiha-matn">
+          <h3>Personal Blog</h3>
+          <p>
+            <span data-lang="uz">Node.js va Express bilan yaratilgan, to'liq funksional blog platformasi</span>
+            <span data-lang="ru">Полнофункциональная блог-платформа, созданная с использованием Node.js и Express</span>
+          </p>
+          <div class="loyiha-texnologiyalar">
+            <span class="texnologiya">Node.js</span>
+            <span class="texnologiya">Express</span>
+            <span class="texnologiya">MongoDB</span>
+          </div>
+          <div class="loyiha-havolalar">
+            <a href="#" class="tugma tugma-kichik">
+              <span data-lang="uz">Ko'rish</span>
+              <span data-lang="ru">Смотреть</span>
+            </a>
+            <a href="#" class="tugma tugma-kichik tugma-github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 5 -->
+      <div class="loyiha-karta" data-category="other" data-project-id="5" data-aos="fade-up" data-aos-delay="400">
+        <div class="loyiha-rasm">
+          <img src="https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="AI Chat Bot">
+          <div class="loyiha-overlay">
+            <button class="loyiha-details-tugma">
+              <span data-lang="uz">Batafsil</span>
+              <span data-lang="ru">Подробнее</span>
+            </button>
+          </div>
+        </div>
+        <div class="loyiha-matn">
+          <h3>AI Chat Bot</h3>
+          <p>
+            <span data-lang="uz">Python va machine learning texnologiyalarini ishlatib yaratilgan sun'iy intellekt chat bot</span>
+            <span data-lang="ru">Чат-бот с искусственным интеллектом, созданный с использованием Python и технологий машинного обучения</span>
+          </p>
+          <div class="loyiha-texnologiyalar">
+            <span class="texnologiya">Python</span>
+            <span class="texnologiya">TensorFlow</span>
+            <span class="texnologiya">NLP</span>
+          </div>
+          <div class="loyiha-havolalar">
+            <a href="#" class="tugma tugma-kichik">
+              <span data-lang="uz">Ko'rish</span>
+              <span data-lang="ru">Смотреть</span>
+            </a>
+            <a href="#" class="tugma tugma-kichik tugma-github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 6 -->
+      <div class="loyiha-karta" data-category="mobile" data-project-id="6" data-aos="fade-up" data-aos-delay="500">
+        <div class="loyiha-rasm">
+          <img src="https://images.pexels.com/photos/7149165/pexels-photo-7149165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fitness Tracker">
+          <div class="loyiha-overlay">
+            <button class="loyiha-details-tugma">
+              <span data-lang="uz">Batafsil</span>
+              <span data-lang="ru">Подробнее</span>
+            </button>
+          </div>
+        </div>
+        <div class="loyiha-matn">
+          <h3>Fitness Tracker</h3>
+          <p>
+            <span data-lang="uz">Flutter bilan yaratilgan, fitness mashg'ulotlarni kuzatib boruvchi mobil ilova</span>
+            <span data-lang="ru">Мобильное приложение для отслеживания фитнес-тренировок, созданное с помощью Flutter</span>
+          </p>
+          <div class="loyiha-texnologiyalar">
+            <span class="texnologiya">Flutter</span>
+            <span class="texnologiya">Firebase</span>
+            <span class="texnologiya">Dart</span>
+          </div>
+          <div class="loyiha-havolalar">
+            <a href="#" class="tugma tugma-kichik">
+              <span data-lang="uz">Ko'rish</span>
+              <span data-lang="ru">Смотреть</span>
+            </a>
+            <a href="#" class="tugma tugma-kichik tugma-github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal for project details -->
+  <div class="modal" id="loyiha-modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-body">
+        <div class="modal-loading">
+          <div class="spinner"></div>
+        </div>
+        <div class="modal-details"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer will be loaded with JavaScript -->
+  <footer id="pastki-container"></footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/asosiy.js"></script>
+</body>
+</html>

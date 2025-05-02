@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aloqa — Husanbek</title>
+  <link rel="stylesheet" href="assets/css/uslub.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-light">
+  <!-- Loading Screen -->
+  <div class="loading-sahifa">
+    <div class="terminal">
+      <div class="kod-satr">cd ./contact</div>
+      <div class="kod-satr">npm run connect</div>
+      <div class="kod-satr">Establishing connection...</div>
+    </div>
+  </div>
+
+  <!-- Header will be loaded with JavaScript -->
+  <header id="boshnav-container"></header>
+
+  <main class="asosiy-kontent sahifa-asosiy">
+    <div class="sahifa-sarlavha">
+      <h1>
+        <span data-lang="uz">Bog'lanish</span>
+        <span data-lang="ru">Связаться</span>
+      </h1>
+    </div>
+    
+    <section class="aloqa-bolim">
+      <div class="aloqa-konteyner">
+        <div class="aloqa-info" data-aos="fade-right">
+          <h2>
+            <span data-lang="uz">Keling, gaplashamiz!</span>
+            <span data-lang="ru">Давайте поговорим!</span>
+          </h2>
+          
+          <p>
+            <span data-lang="uz">Loyihangiz haqida gaplashish, savol berish yoki shunchaki salom aytish uchun menga xabar yuboring.</span>
+            <span data-lang="ru">Свяжитесь со мной, чтобы обсудить ваш проект, задать вопрос или просто поздороваться.</span>
+          </p>
+          
+          <div class="aloqa-ma'lumotlar">
+            <div class="aloqa-element">
+              <div class="aloqa-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="aloqa-text">
+                <h3>Email</h3>
+                <p>husan@example.com</p>
+              </div>
+            </div>
+            
+            <div class="aloqa-element">
+              <div class="aloqa-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="aloqa-text">
+                <h3>
+                  <span data-lang="uz">Telefon</span>
+                  <span data-lang="ru">Телефон</span>
+                </h3>
+                <p>+998 90 123 45 67</p>
+              </div>
+            </div>
+            
+            <div class="aloqa-element">
+              <div class="aloqa-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="aloqa-text">
+                <h3>
+                  <span data-lang="uz">Joylashuv</span>
+                  <span data-lang="ru">Местоположение</span>
+                </h3>
+                <p>
+                  <span data-lang="uz">Toshkent, O'zbekiston</span>
+                  <span data-lang="ru">Ташкент, Узбекистан</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="ijtimoiy-tarmoqlar">
+            <a href="#" class="ijtimoiy-havola" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="ijtimoiy-havola" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="ijtimoiy-havola" title="Telegram">
+              <i class="fab fa-telegram-plane"></i>
+            </a>
+            <a href="#" class="ijtimoiy-havola" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="aloqa-forma" data-aos="fade-left">
+          <form id="contact-form">
+            <div class="forma-element">
+              <label for="name">
+                <span data-lang="uz">Ismingiz</span>
+                <span data-lang="ru">Ваше имя</span>
+              </label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="forma-element">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="forma-element">
+              <label for="subject">
+                <span data-lang="uz">Mavzu</span>
+                <span data-lang="ru">Тема</span>
+              </label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            
+            <div class="forma-element">
+              <label for="message">
+                <span data-lang="uz">Xabar</span>
+                <span data-lang="ru">Сообщение</span>
+              </label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="tugma tugma-asosiy">
+              <span data-lang="uz">Yuborish</span>
+              <span data-lang="ru">Отправить</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Map Section -->
+    <section class="xarita-bolim">
+      <div class="xarita-konteyner">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191885.50263395752!2d69.13928489745201!3d41.28277763431958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1633046397104!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Success Modal -->
+  <div class="modal" id="success-modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-body success-modal-body">
+        <div class="success-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h3>
+          <span data-lang="uz">Xabar yuborildi!</span>
+          <span data-lang="ru">Сообщение отправлено!</span>
+        </h3>
+        <p>
+          <span data-lang="uz">Sizning xabaringiz muvaffaqiyatli yuborildi. Tez orada siz bilan bog'lanaman.</span>
+          <span data-lang="ru">Ваше сообщение успешно отправлено. Я свяжусь с вами в ближайшее время.</span>
+        </p>
+        <button class="tugma tugma-asosiy modal-close-btn">
+          <span data-lang="uz">Yopish</span>
+          <span data-lang="ru">Закрыть</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer will be loaded with JavaScript -->
+  <footer id="pastki-container"></footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="assets/js/asosiy.js"></script>
+</body>
+</html>

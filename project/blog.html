@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Husanbek</title>
+  <link rel="stylesheet" href="assets/css/uslub.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-light">
+  <!-- Loading Screen -->
+  <div class="loading-sahifa">
+    <div class="terminal">
+      <div class="kod-satr">cd ./blog</div>
+      <div class="kod-satr">npm run fetch-posts</div>
+      <div class="kod-satr">Loading blog articles...</div>
+    </div>
+  </div>
+
+  <!-- Header will be loaded with JavaScript -->
+  <header id="boshnav-container"></header>
+
+  <main class="asosiy-kontent sahifa-asosiy">
+    <div class="sahifa-sarlavha">
+      <h1>
+        <span data-lang="uz">Blog</span>
+        <span data-lang="ru">Блог</span>
+      </h1>
+    </div>
+    
+    <div class="blog-qidiruv">
+      <div class="qidiruv-forma">
+        <input type="text" id="blog-search" placeholder="Search...">
+        <button class="qidiruv-tugma">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      
+      <div class="blog-kategoriyalar">
+        <button class="kategoriya-tugma faol" data-category="all">
+          <span data-lang="uz">Hammasi</span>
+          <span data-lang="ru">Все</span>
+        </button>
+        <button class="kategoriya-tugma" data-category="frontend">Frontend</button>
+        <button class="kategoriya-tugma" data-category="backend">Backend</button>
+        <button class="kategoriya-tugma" data-category="design">UI/UX</button>
+        <button class="kategoriya-tugma" data-category="other">
+          <span data-lang="uz">Boshqalar</span>
+          <span data-lang="ru">Другие</span>
+        </button>
+      </div>
+    </div>
+    
+    <section class="blog-konteyner">
+      <!-- Blog Post 1 -->
+      <article class="blog-post" data-category="frontend" data-aos="fade-up">
+        <div class="blog-rasm">
+          <img src="https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Modern JavaScript features">
+          <div class="blog-kategoriya">Frontend</div>
+        </div>
+        <div class="blog-matn">
+          <div class="blog-sana">15 May, 2023</div>
+          <h2>
+            <span data-lang="uz">JavaScript da eng foydali 10 ta zamonaviy funksiya</span>
+            <span data-lang="ru">10 самых полезных современных функций в JavaScript</span>
+          </h2>
+          <p>
+            <span data-lang="uz">Zamonaviy JavaScript-ning eng foydali xususiyatlarini o'rganib chiqamiz va ularni loyihalaringizda qanday qo'llash mumkinligini ko'rsatamiz.</span>
+            <span data-lang="ru">Рассмотрим самые полезные функции современного JavaScript и покажем, как их можно применить в ваших проектах.</span>
+          </p>
+          <a href="#" class="blog-link">
+            <span data-lang="uz">Ko'proq o'qish</span>
+            <span data-lang="ru">Читать далее</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+      
+      <!-- Blog Post 2 -->
+      <article class="blog-post" data-category="backend" data-aos="fade-up" data-aos-delay="100">
+        <div class="blog-rasm">
+          <img src="https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Django vs Flask">
+          <div class="blog-kategoriya">Backend</div>
+        </div>
+        <div class="blog-matn">
+          <div class="blog-sana">3 Aprel, 2023</div>
+          <h2>
+            <span data-lang="uz">Django va Flask: Qaysi birini tanlash kerak?</span>
+            <span data-lang="ru">Django и Flask: Какой выбрать?</span>
+          </h2>
+          <p>
+            <span data-lang="uz">Bu maqolada, Python-ning ikkita mashhur web-framework'ini chuqur taqqoslaymiz va qaysi vaziyatlarda qaysi biri yaxshiroq ishlashini ko'rib chiqamiz.</span>
+            <span data-lang="ru">В этой статье мы подробно сравним два популярных веб-фреймворка Python и рассмотрим, какой из них лучше работает в каких ситуациях.</span>
+          </p>
+          <a href="#" class="blog-link">
+            <span data-lang="uz">Ko'proq o'qish</span>
+            <span data-lang="ru">Читать далее</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+      
+      <!-- Blog Post 3 -->
+      <article class="blog-post" data-category="design" data-aos="fade-up" data-aos-delay="200">
+        <div class="blog-rasm">
+          <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="UI Design trends">
+          <div class="blog-kategoriya">UI/UX</div>
+        </div>
+        <div class="blog-matn">
+          <div class="blog-sana">27 Mart, 2023</div>
+          <h2>
+            <span data-lang="uz">2023-yildagi eng mashxur UI/UX dizayn trendlari</span>
+            <span data-lang="ru">Самые популярные тренды UI/UX дизайна в 2023 году</span>
+          </h2>
+          <p>
+            <span data-lang="uz">Joriy yilda UI/UX dizaynida qanday trendlar bo'lmoqda? Zamonaviy va foydalanuvchilarga qulay dizaynning sirlarini bilib oling.</span>
+            <span data-lang="ru">Какие тренды наблюдаются в UI/UX дизайне в этом году? Узнайте секреты современного и удобного для пользователей дизайна.</span>
+          </p>
+          <a href="#" class="blog-link">
+            <span data-lang="uz">Ko'proq o'qish</span>
+            <span data-lang="ru">Читать далее</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+      
+      <!-- Blog Post 4 -->
+      <article class="blog-post" data-category="frontend" data-aos="fade-up" data-aos-delay="300">
+        <div class="blog-rasm">
+          <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="CSS Grid">
+          <div class="blog-kategoriya">Frontend</div>
+        </div>
+        <div class="blog-matn">
+          <div class="blog-sana">12 Fevral, 2023</div>
+          <h2>
+            <span data-lang="uz">CSS Grid orqali zamonaviy sahifalar yaratish</span>
+            <span data-lang="ru">Создание современных страниц с помощью CSS Grid</span>
+          </h2>
+          <p>
+            <span data-lang="uz">CSS Grid-ning kuchli xususiyatlaridan foydalanish va uni Flexbox bilan birga ishlatish orqali responsive dizayn yaratish yo'llarini o'rganamiz.</span>
+            <span data-lang="ru">Изучим способы создания адаптивного дизайна, используя мощные возможности CSS Grid и применяя его вместе с Flexbox.</span>
+          </p>
+          <a href="#" class="blog-link">
+            <span data-lang="uz">Ko'proq o'qish</span>
+            <span data-lang="ru">Читать далее</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+      
+      <!-- Blog Post 5 -->
+      <article class="blog-post" data-category="other" data-aos="fade-up" data-aos-delay="400">
+        <div class="blog-rasm">
+          <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Remote work">
+          <div class="blog-kategoriya">
+            <span data-lang="uz">Boshqalar</span>
+            <span data-lang="ru">Другие</span>
+          </div>
+        </div>
+        <div class="blog-matn">
+          <div class="blog-sana">5 Yanvar, 2023</div>
+          <h2>
+            <span data-lang="uz">Masofaviy ish uchun eng yaxshi asboblar va dasturlar</span>
+            <span data-lang="ru">Лучшие инструменты и программы для удаленной работы</span>
+          </h2>
+          <p>
+            <span data-lang="uz">Masofaviy ishlashda samaradorligingizni oshiradigan va jamoaviy hamkorlikni yaxshilaydigan eng yaxshi vositalar haqida gaplashamiz.</span>
+            <span data-lang="ru">Поговорим о лучших инструментах, которые повышают вашу эффективность при удаленной работе и улучшают командное сотрудничество.</span>
+          </p>
+          <a href="#" class="blog-link">
+            <span data-lang="uz">Ko'proq o'qish</span>
+            <span data-lang="ru">Читать далее</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+      
+      <!-- Blog Post 6 -->
+      <article class="blog-post" data-category="backend" data-aos="fade-up" data-aos-delay="500">
+        <div class="blog-rasm">
+          <img src="https://images.pexels.com/photos/8442403/pexels-photo-8442403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Database optimization">
+          <div class="blog-kategoriya">Backend</div>
+        </div>
+        <div class="blog-matn">
+          <div class="blog-sana">20 Dekabr, 2022</div>
+          <h2>
+            <span data-lang="uz">Ma'lumotlar bazasini optimallashtirishning 7 ta usuli</span>
+            <span data-lang="ru">7 способов оптимизации базы данных</span>
+          </h2>
+          <p>
+            <span data-lang="uz">Bu maqolada ma'lumotlar bazasi samaradorligini oshiradigan va ularning tezligini optimallashtiradigan eng muhim usullarni ko'rib chiqamiz.</span>
+            <span data-lang="ru">В этой статье мы рассмотрим наиболее важные методы, которые повышают эффективность базы данных и оптимизируют их скорость.</span>
+          </p>
+          <a href="#" class="blog-link">
+            <span data-lang="uz">Ko'proq o'qish</span>
+            <span data-lang="ru">Читать далее</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+    </section>
+    
+    <div class="pagination">
+      <button class="pagination-tugma faol">1</button>
+      <button class="pagination-tugma">2</button>
+      <button class="pagination-tugma">3</button>
+      <span class="pagination-ellipsis">...</span>
+      <button class="pagination-tugma">5</button>
+    </div>
+  </main>
+
+  <!-- Footer will be loaded with JavaScript -->
+  <footer id="pastki-container"></footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/asosiy.js"></script>
+</body>
+</html>

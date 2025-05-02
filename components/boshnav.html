@@ -1,7 +1,55 @@
 <!-- Navbar -->
+ <style>/* LOGO umumiy konteyner */
+  a.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Rasm uchun style */
+  a.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  /* Matn yonida turadigan joy */
+  .logo-text {
+    font-size: 1.4rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  
+  /* Nuqta (.) dizayni */
+  .logo-dot {
+    font-size: 1.6rem;
+    color: var(--asosiy-rang);
+    margin-left: -4px;
+  }
+  
+  /* RESPONSIVE: Mobil versiyada logo kichrayadi */
+  @media (max-width: 768px) {
+    a.logo img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .logo-text {
+      font-size: 1rem;
+    }
+  
+    .logo-dot {
+      font-size: 1.2rem;
+    }
+  }
+  </style>
 <div class="boshnav">
   <div class="boshnav-konteyner">
     <a href="index.html" class="logo">
+      <img src="/assets/images/fav.ico" alt="IT Creative Logo">
+
       <span class="logo-text">Husanbek-Coder.uz</span>
       <span class="logo-dot">.</span>
     </a>
@@ -36,6 +84,9 @@
   
   <!-- Mobile Navigation Menu -->
   <nav class="asosiy-nav">
+   <center>      <img src="/assets/images/fav.ico" alt="IT Creative Logo">
+   </center>
+
     <ul class="nav-royxat">
       <li class="nav-element">
         <a href="index.html" class="nav-havola">

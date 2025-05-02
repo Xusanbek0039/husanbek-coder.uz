@@ -5,16 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aloqa — Husanbek</title>
   <link rel="stylesheet" href="assets/css/uslub.css">
+  <link rel="icon" href="assets/images/fav.ico">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body class="theme-light">
   <!-- Loading Screen -->
   <div class="loading-sahifa">
     <div class="terminal">
-      <div class="kod-satr">cd ./contact</div>
+      <div class="kod-satr">cd ./bog'lanish</div>
       <div class="kod-satr">npm run connect</div>
-      <div class="kod-satr">Establishing connection...</div>
+      <div class="kod-satr">Web saxifa bilan aloqa ta;minlandi...</div>
     </div>
   </div>
 
@@ -24,6 +27,7 @@
   <main class="asosiy-kontent sahifa-asosiy">
     <div class="sahifa-sarlavha">
       <h1>
+        <br>
         <span data-lang="uz">Bog'lanish</span>
         <span data-lang="ru">Связаться</span>
       </h1>
@@ -84,23 +88,22 @@
           </div>
           
           <div class="ijtimoiy-tarmoqlar">
-            <a href="#" class="ijtimoiy-havola" title="GitHub">
+            <a href="https://github.com/Xusanbek0039/husanbek-coder.uz" class="ijtimoiy-havola" title="GitHub">
               <i class="fab fa-github"></i>
             </a>
-            <a href="#" class="ijtimoiy-havola" title="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
+            <a href="https://www.youtube.com/@IT_Creative/" class="ijtimoiy-havola" title="youtube">
+              <i class="fab fa-youtube"></i>
             </a>
-            <a href="#" class="ijtimoiy-havola" title="Telegram">
+            <a href="https://t.me/husanbek_coder" class="ijtimoiy-havola" title="Telegram">
               <i class="fab fa-telegram-plane"></i>
             </a>
-            <a href="#" class="ijtimoiy-havola" title="Instagram">
+            <a href="https://www.instagram.com/husanbek_coder?igsh=MWlwcnAzMTJzaXk4aA%3D%3D&utm_source=qr" class="ijtimoiy-havola" title="Instagram">
               <i class="fab fa-instagram"></i>
             </a>
           </div>
         </div>
-        
         <div class="aloqa-forma" data-aos="fade-left">
-          <form id="contact-form">
+          <form id="contact-form" action="https://formspree.io/f/xwpollzl" method="POST">
             <div class="forma-element">
               <label for="name">
                 <span data-lang="uz">Ismingiz</span>
@@ -129,24 +132,27 @@
               </label>
               <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-            
+        
+            <!-- Optional hidden fields for spam protection or redirect -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://yourdomain.uz/thanks.html">
+        
             <button type="submit" class="tugma tugma-asosiy">
               <span data-lang="uz">Yuborish</span>
               <span data-lang="ru">Отправить</span>
             </button>
           </form>
         </div>
-      </div>
-    </section>
+        
     
     <!-- Map Section -->
-    <section class="xarita-bolim">
-      <div class="xarita-konteyner">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191885.50263395752!2d69.13928489745201!3d41.28277763431958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1633046397104!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </section>
-  </main>
 
+  </main>
+  <section class="xarita-bolim">
+    <div class="xarita-konteyner">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1529.011227295935!2d68.39677830589127!3d39.96325066831841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x38b24f00658feb1f%3A0x36b9626d683aee4f!2sX97X%2BMG6%2C%20Zomin%2C%20Jizzax%20viloyati!3m2!1d39.964061!2d68.3989833!5e0!3m2!1suz!2s!4v1746194217608!5m2!1suz!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
   <!-- Success Modal -->
   <div class="modal" id="success-modal">
     <div class="modal-content">
